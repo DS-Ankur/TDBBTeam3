@@ -31,10 +31,12 @@ public class USDnotforprofitTC extends base{
 		USDnotforprofitPage UP = new USDnotforprofitPage(driver);
 		
 		
-		//Assert.assert(UP.MonthCommunityPlanFee(),$1.95);
-		
-		//System.out.print("String-- " + UP.MonthCommunityPlanFee().getText());
-		System.out.print(driver.findElement(By.xpath("(//div[@class='rte'])[5]")).getText());
+		Assert.assertEquals(UP.MonthCommunityPlanFee().getAttribute("innerText").trim(),"$1.95");
+		Assert.assertEquals(UP.MonthCommunityPlusPlanFee().getAttribute("innerText").trim(),"$4.95");
+		Assert.assertEquals(UP.MonthAdditionalActPlanFee().getAttribute("innerText").trim(),"N/A");
+		Assert.assertEquals(UP.RebateCommunityPlanFee().getAttribute("innerText").trim(),"$5,000");
+		Assert.assertEquals(UP.RebateCommunityPlusPlanFee().getAttribute("innerText").trim(),"$10,000");
+		Assert.assertEquals(UP.RebateAdditionalActPlanFee().getAttribute("innerText").trim(),"N/A");
 	}
 	}
 
