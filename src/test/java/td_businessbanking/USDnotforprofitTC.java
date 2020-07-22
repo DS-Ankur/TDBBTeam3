@@ -3,6 +3,7 @@ package td_businessbanking;
 import java.io.IOException;
 
 import org.apache.http.util.Asserts;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
@@ -25,14 +26,15 @@ public class USDnotforprofitTC extends base{
 		//2. inheritance (extends method)
 		
 		LandingPage l = new LandingPage(driver);// to pass this argument to landing page, we need to use constructor in landing page
+		
 		l.USDnotforprofit_webelement().click(); // similar to findelement by (xpath....)
 		USDnotforprofitPage UP = new USDnotforprofitPage(driver);
 		
 		
-		//Assert.assertEquals(UP.MonthCommunityPlanFee().getText(),$1.95);
+		//Assert.assert(UP.MonthCommunityPlanFee(),$1.95);
 		
-		
-		
+		//System.out.print("String-- " + UP.MonthCommunityPlanFee().getText());
+		System.out.print(driver.findElement(By.xpath("(//div[@class='rte'])[5]")).getText());
 	}
 	}
 
