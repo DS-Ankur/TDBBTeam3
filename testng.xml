@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="td_businessbanking.AppTest"/>
-      <class name="td_businessbanking.USDnotforprofitTC"/>
+            <class name="td_businessbanking.USDnotforprofitTC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
