@@ -12,15 +12,17 @@ public class UnlimitedBP {
 	String Monthlybal = "$65,000 U.S.";
 	String PerMonthTrans = "Unlimited";
 	String Monthlydepitems= "Unlimited";
-		
-	public UnlimitedBP(WebDriver driver) {
-		this.driver = driver;
-	}
 	
 	By Monthlyfee = By.xpath(("(//span[@class='td-product-feature-text'])[1]"));
 	By MMBal = By.xpath(("(//span[@class='td-product-feature-text'])[2]"));
 	By Transpermon = By.xpath(("(//span[@class='td-product-feature-text'])[3]"));
 	By Depitemspermon = By.xpath(("(//span[@class='td-product-feature-text'])[4]"));
+	
+	public UnlimitedBP(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	
 	
 	public WebElement MonthPlanFee()
 		{

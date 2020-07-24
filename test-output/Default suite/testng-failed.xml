@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="td_businessbanking.USDnotforprofitTC">
+      <class name="td_businessbanking.UnlimitedUSDBBTC">
         <methods>
-          <include name="USDnotforProfitNavigation"/>
+          <include name="BusinessBankingUSD"/>
         </methods>
-      </class> <!-- td_businessbanking.USDnotforprofitTC -->
+      </class> <!-- td_businessbanking.UnlimitedUSDBBTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -33,9 +33,9 @@ public void BusinessBankingUSD() throws IOException {
 		System.out.println(UBP.MonthlyTrans().getText());
 		System.out.println(UBP.Depitemsmonthly().getText());
 						
-		Assert.assertEquals(Mfee, UBP.MonthPlanFee());
-		Assert.assertEquals(Monthlybal, UBP.MinMonBal());
-		Assert.assertEquals(PerMonthTrans, UBP.MonthlyTrans());
-		Assert.assertEquals(Monthlydepitems, UBP.Depitemsmonthly());
+	Assert.assertEquals(Mfee, UBP.MonthPlanFee().getText());
+	Assert.assertEquals(Monthlybal, UBP.MinMonBal().getText());
+	Assert.assertEquals(PerMonthTrans, UBP.MonthlyTrans().getText());
+	Assert.assertEquals(Monthlydepitems, UBP.Depitemsmonthly().getText());
 }
 }

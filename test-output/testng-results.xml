@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12077" started-at="2020-07-22T04:27:52Z" finished-at="2020-07-22T04:28:04Z">
+  <suite name="Default suite" duration-ms="10380" started-at="2020-07-24T11:46:25 EDT" finished-at="2020-07-24T11:46:35 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12077" started-at="2020-07-22T04:27:52Z" finished-at="2020-07-22T04:28:04Z">
-      <class name="td_businessbanking.USDnotforprofitTC">
-        <test-method status="PASS" signature="USDnotforProfitNavigation()[pri:0, instance:td_businessbanking.USDnotforprofitTC@7920ba90]" name="USDnotforProfitNavigation" duration-ms="12055" started-at="2020-07-21T21:27:52Z" finished-at="2020-07-21T21:28:04Z">
+    <test name="Default test" duration-ms="10380" started-at="2020-07-24T11:46:25 EDT" finished-at="2020-07-24T11:46:35 EDT">
+      <class name="td_businessbanking.UnlimitedUSDBBTC">
+        <test-method status="PASS" signature="BusinessBankingUSD()[pri:0, instance:td_businessbanking.UnlimitedUSDBBTC@396f6598]" name="BusinessBankingUSD" duration-ms="10322" started-at="2020-07-24T11:46:25 EDT" finished-at="2020-07-24T11:46:35 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- USDnotforProfitNavigation -->
-      </class> <!-- td_businessbanking.USDnotforprofitTC -->
+        </test-method> <!-- BusinessBankingUSD -->
+      </class> <!-- td_businessbanking.UnlimitedUSDBBTC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

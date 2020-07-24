@@ -19,7 +19,7 @@ public Properties prop;
 		{ 
 			prop = new Properties();
 			
-			FileInputStream fis = new FileInputStream("C:/Users/Rana/Desktop/Test Automation/Workstation/TDBBteam3/src/main/java/resources/data.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\reshm\\eclipse-workspace\\TDBBTeam3\\src\\main\\java\\resources\\data.properties");
 			
 			prop.load(fis);
 			
@@ -27,7 +27,7 @@ public Properties prop;
 			
 			if(browsername.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","C:/Program Files/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\Drivers\\ChromeWebDriver\\chromedriver.exe");
 				 driver = new ChromeDriver();
 			}
 			else if(browsername.equalsIgnoreCase("firefox") )
@@ -40,7 +40,7 @@ public Properties prop;
 				//IE driver info
 			}
 		
-		
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
