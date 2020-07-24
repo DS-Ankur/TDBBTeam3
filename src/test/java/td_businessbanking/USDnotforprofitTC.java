@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.http.util.Asserts;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
@@ -12,7 +13,7 @@ import pageobjects.USDnotforprofitPage;
 import resources.base;
 
 public class USDnotforprofitTC extends base{
-
+	public WebDriver driver;
 	@Test
 	
 	public void USDnotforProfitNavigation() throws IOException
@@ -20,7 +21,7 @@ public class USDnotforprofitTC extends base{
 		
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
-		
+	
 		//2 ways to access methods pf other call
 		//1 . create object to that class
 		//2. inheritance (extends method)
