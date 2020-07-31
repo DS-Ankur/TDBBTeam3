@@ -3,6 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
+      <class name="td_businessbanking.USDnotforprofitTC2">
+        <methods>
+          <include name="USDnotforProfitNavigation2"/>
+        </methods>
+      </class> <!-- td_businessbanking.USDnotforprofitTC2 -->
       <class name="td_businessbanking.USDnotforprofitTC">
         <methods>
           <include name="USDnotforProfitNavigation"/>

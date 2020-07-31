@@ -32,7 +32,7 @@ public Properties prop;
 			
 			if(browsername.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","C:/Program Files/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:/Program Files/chromedriver.exe");// put drivers inside resources 
 				 driver = new ChromeDriver();
 			}
 			else if(browsername.equalsIgnoreCase("firefox") )
@@ -49,15 +49,23 @@ public Properties prop;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
+	
+		
 		}
-		public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException
+		public String getScreenShotPath(String testCaseName,WebDriver driver)
 		{
 			TakesScreenshot ts=(TakesScreenshot) driver;
 			File source =ts.getScreenshotAs(OutputType.FILE);
 			String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-			FileUtils.copyFile(source,new File(destinationFile));
+			try {
+				FileUtils.copyFile(source,new File(destinationFile));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.print(destinationFile);
 			return destinationFile;
-				
+			
 		//Explanied in downupclass in selenium project
 		//http://makeseleniumeasy.com/2017/04/02/hierarchy-of-selenium-classes-and-interfaces/
 		//http://makeseleniumeasy.com/2017/08/27/taking-screenshot-using-takesscreenshot-interface-in-selenium/

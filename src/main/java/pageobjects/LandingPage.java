@@ -13,7 +13,7 @@ public class LandingPage {
 	By USDBasicBusinessPlanlink = By.xpath(("(//a[@class='td-rte-font-18 td-link-action'])[12]"));
 	By USDEverydayBusinessPlanClink = By.xpath(("(//a[@class='td-rte-font-18 td-link-action'])[11]"));
 	By USDEverydayBusinessPlanBlink = By.xpath(("(//a[@class='td-rte-font-18 td-link-action'])[10]"));
-			
+	By popup=By.xpath("//button[text()='NO THANKS']");		
 	
     public LandingPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -34,9 +34,16 @@ public class LandingPage {
     }         	
     public WebElement USDEverydayBusinessPlanB_webelement(){
         return driver.findElement(USDEverydayBusinessPlanBlink);
-    	
     }
-	
+    public int getPopUpSize(){
+    	return driver.findElements(popup).size();
+    }
+    public WebElement getPopUp(){
+    	return driver.findElement(popup);
+    }
+
+    	
+  
 	
 }
 	

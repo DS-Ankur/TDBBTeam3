@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="td_businessbanking.Listeners"/>
-  </listeners>
   <test name="Test(failed)" parallel="tests">
     <classes>
       <class name="td_businessbanking.USDnotforprofitTC">
